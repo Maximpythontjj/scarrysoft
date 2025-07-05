@@ -1,5 +1,45 @@
 // Modern JavaScript with improved performance and animations
 
+// Theme Management
+class ThemeManager {
+    constructor() {
+        this.currentTheme = localStorage.getItem('theme') || 'light';
+        this.themeToggle = document.getElementById('themeToggle');
+        this.themeIcon = document.querySelector('.theme-icon');
+        this.init();
+    }
+    
+    init() {
+        this.applyTheme(this.currentTheme);
+        this.themeToggle.addEventListener('click', () => this.toggleTheme());
+        
+        // Listen for system theme changes
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
+            if (!localStorage.getItem('theme')) {
+                this.applyTheme(e.matches ? 'dark' : 'light');
+            }
+        });
+    }
+    
+    toggleTheme() {
+        this.currentTheme = this.currentTheme === 'light' ? 'dark' : 'light';
+        this.applyTheme(this.currentTheme);
+        localStorage.setItem('theme', this.currentTheme);
+    }
+    
+    applyTheme(theme) {
+        document.documentElement.setAttribute('data-theme', theme);
+        this.themeIcon.textContent = theme === 'light' ? '🌙' : '☀️';
+        this.currentTheme = theme;
+        
+        // Add smooth transition for theme change
+        document.body.style.transition = 'background-color 0.3s ease, color 0.3s ease';
+        setTimeout(() => {
+            document.body.style.transition = '';
+        }, 300);
+    }
+}
+
 // Utility functions
 const debounce = (func, wait) => {
     let timeout;
@@ -469,6 +509,9 @@ class LoadingScreen {
 
 // Initialize everything when DOM is loaded
 document.addEventListener('DOMContentLoaded', () => {
+    // Initialize theme manager
+    new ThemeManager();
+    
     // Initialize loading screen
     new LoadingScreen();
     
