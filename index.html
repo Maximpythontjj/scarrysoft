@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCARRY SOFT - Telegram Message Broadcaster</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="matrix-bg"></div>
+    
+    <header class="header">
+        <nav class="nav">
+            <div class="logo">
+                <span class="logo-icon">⚡</span>
+                <span class="logo-text">SCARRY SOFT</span>
+            </div>
+            <div class="nav-links">
+                <a href="#features">Возможности</a>
+                <a href="#security">Безопасность</a>
+                <a href="#pricing">Цены</a>
+                <a href="#contact">Контакты</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1 class="hero-title">
+                            <span class="glitch" data-text="TELEGRAM">TELEGRAM</span>
+                            <span class="highlight">SCARRY SOFT</span>
+                        </h1>
+                        <p class="hero-subtitle">Автоматизированная рассылка по группам с мультиаккаунтной поддержкой</p>
+                        <div class="hero-stats">
+                            <div class="stat">
+                                <span class="stat-number">10</span>
+                                <span class="stat-label">аккаунтов одновременно</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">1000</span>
+                                <span class="stat-label">групп для рассылки</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">100</span>
+                                <span class="stat-label">% стабильность</span>
+                            </div>
+                        </div>
+                        <div class="hero-buttons">
+                            <button class="btn btn-primary">
+                                <span>ПОЛУЧИТЬ ДОСТУП</span>
+                                <div class="btn-glow"></div>
+                            </button>
+                            <button class="btn btn-secondary">
+                                <span>ДЕМО ВЕРСИЯ</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="hero-visual">
+                        <div class="terminal">
+                            <div class="terminal-header">
+                                <div class="terminal-buttons">
+                                    <span class="btn-close"></span>
+                                    <span class="btn-minimize"></span>
+                                    <span class="btn-maximize"></span>
+                                </div>
+                                <span class="terminal-title">SCARRY.exe</span>
+                            </div>
+                            <div class="terminal-body">
+                                <div class="terminal-line">
+                                    <span class="prompt">root@broadcaster:~$</span>
+                                    <span class="command">python main.py</span>
+                                </div>
+                                <div class="terminal-line">
+                                    <span class="success">[✓] Загружено 10 аккаунтов</span>
+                                </div>
+                                <div class="terminal-line">
+                                    <span class="success">[✓] Прокси подключены</span>
+                                </div>
+                                <div class="terminal-line">
+                                    <span class="info">[i] Начинаю рассылку...</span>
+                                </div>
+                                <div class="terminal-line">
+                                    <span class="success">[✓] Отправлено в 247 групп</span>
+                                </div>
+                                <div class="terminal-cursor">_</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="features">
+            <div class="container">
+                <h2 class="section-title">
+                    <span class="section-number">01</span>
+                    ВОЗМОЖНОСТИ СИСТЕМЫ
+                </h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">💬</div>
+                        <h3>Массовая рассылка</h3>
+                        <p>Автоматически пересылает последнее сообщение из «Сохранённого» во все группы с непрочитанными сообщениями</p>
+                        <div class="feature-tech">
+                            <span class="tech-tag">AUTO-FORWARD</span>
+                            <span class="tech-tag">BULK-SEND</span>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">👥</div>
+                        <h3>Мультиаккаунт</h3>
+                        <p>Поддержка до 10 аккаунтов одновременно. Каждый работает независимо через accounts.txt</p>
+                        <div class="feature-tech">
+                            <span class="tech-tag">MULTI-SESSION</span>
+                            <span class="tech-tag">PARALLEL</span>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">🛡️</div>
+                        <h3>Прокси защита</h3>
+                        <p>SOCKS5/HTTP прокси для каждого аккаунта. Безопасное и анонимное подключение</p>
+                        <div class="feature-tech">
+                            <span class="tech-tag">SOCKS5</span>
+                            <span class="tech-tag">ANONYMOUS</span>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">🔧</div>
+                        <h3>Обработка ошибок</h3>
+                        <p>Автоматический обход FloodWait, PeerFlood, BadRequest, 2FA-защиты и заморозки аккаунтов</p>
+                        <div class="feature-tech">
+                            <span class="tech-tag">ERROR-BYPASS</span>
+                            <span class="tech-tag">AUTO-RECOVERY</span>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">🤖</div>
+                        <h3>Система самозащиты</h3>
+                        <p>При блокировках отправляет /start в @spambot, ждет восстановления и продолжает работу</p>
+                        <div class="feature-tech">
+                            <span class="tech-tag">SELF-HEAL</span>
+                            <span class="tech-tag">ANTI-SPAM</span>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">❄️</div>
+                        <h3>Анти-заморозка</h3>
+                        <p>Автоматический пропуск замороженных аккаунтов (FROZEN_METHOD_INVALID)</p>
+                        <div class="feature-tech">
+                            <span class="tech-tag">FREEZE-DETECT</span>
+                            <span class="tech-tag">AUTO-SKIP</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="security" class="security">
+            <div class="container">
+                <h2 class="section-title">
+                    <span class="section-number">02</span>
+                    БЕЗОПАСНОСТЬ И ЗАЩИТА
+                </h2>
+                <div class="security-content">
+                    <div class="security-text">
+                        <div class="security-item">
+                            <div class="security-icon">🔐</div>
+                            <div>
+                                <h3>Лицензионная защита</h3>
+                                <p>Проверка лицензии через ключ + HWID. Софт работает только с валидным ключом и привязан к железу</p>
+                            </div>
+                        </div>
+                        
+                        <div class="security-item">
+                            <div class="security-icon">🚫</div>
+                            <div>
+                                <h3>Нет хранения паролей</h3>
+                                <p>Программа не сохраняет и не передает ваши пароли. Полная конфиденциальность данных</p>
+                            </div>
+                        </div>
+                        
+                        <div class="security-item">
+                            <div class="security-icon">🔒</div>
+                            <div>
+                                <h3>Нет доступа к сообщениям</h3>
+                                <p>Софт не имеет доступа к вашим личным сообщениям или файлам. Только рассылка</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="security-visual">
+                        <div class="code-block">
+                            <div class="code-header">
+                                <span>auth.json</span>
+                                <div class="code-status">
+                                    <span class="status-dot active"></span>
+                                    <span>PROTECTED</span>
+                                </div>
+                            </div>
+                            <div class="code-content">
+                                <div class="code-line">
+                                    <span class="line-number">1</span>
+                                    <span class="code-text">{</span>
+                                </div>
+                                <div class="code-line">
+                                    <span class="line-number">2</span>
+                                    <span class="code-text">  "license_key": "████████████",</span>
+                                </div>
+                                <div class="code-line">
+                                    <span class="line-number">3</span>
+                                    <span class="code-text">  "hwid": "████████████████",</span>
+                                </div>
+                                <div class="code-line">
+                                    <span class="line-number">4</span>
+                                    <span class="code-text">  "status": "VERIFIED"</span>
+                                </div>
+                                <div class="code-line">
+                                    <span class="line-number">5</span>
+                                    <span class="code-text">}</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="files-structure">
+            <div class="container">
+                <h2 class="section-title">
+                    <span class="section-number">03</span>
+                    СТРУКТУРА ФАЙЛОВ
+                </h2>
+                <div class="files-grid">
+                    <div class="file-card">
+                        <div class="file-icon">📁</div>
+                        <h3>accounts.txt</h3>
+                        <p>Список аккаунтов</p>
+                        <div class="file-format">
+                            <code>number;api_id;api_hash</code>
+                        </div>
+                    </div>
+                    
+                    <div class="file-card">
+                        <div class="file-icon">🌐</div>
+                        <h3>proxy.txt</h3>
+                        <p>Список прокси</p>
+                        <div class="file-format">
+                            <code>SOCKS5 + HTTP</code>
+                        </div>
+                    </div>
+                    
+                    <div class="file-card">
+                        <div class="file-icon">🔑</div>
+                        <h3>auth.json</h3>
+                        <p>Сохранение ключа</p>
+                        <div class="file-format">
+                            <code>Автосоздание</code>
+                        </div>
+                    </div>
+                    
+                    <div class="file-card">
+                        <div class="file-icon">⚠️</div>
+                        <h3>spam.txt</h3>
+                        <p>Лог аккаунтов</p>
+                        <div class="file-format">
+                            <code>Автоведение</code>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="target-audience">
+            <div class="container">
+                <h2 class="section-title">
+                    <span class="section-number">04</span>
+                    КОМУ ПОДОЙДЕТ
+                </h2>
+                <div class="audience-grid">
+                    <div class="audience-card">
+                        <div class="audience-icon">📺</div>
+                        <h3>Владельцам каналов</h3>
+                        <p>Рекламные Telegram-каналы и продвижение контента</p>
+                    </div>
+                    
+                    <div class="audience-card">
+                        <div class="audience-icon">💰</div>
+                        <h3>Арбитражникам</h3>
+                        <p>Маркетологи и специалисты по трафику</p>
+                    </div>
+                    
+                    <div class="audience-card">
+                        <div class="audience-icon">📱</div>
+                        <h3>SMM-специалистам</h3>
+                        <p>Социальные медиа и продвижение в мессенджерах</p>
+                    </div>
+                    
+                    <div class="audience-card">
+                        <div class="audience-icon">🤖</div>
+                        <h3>Разработчикам ботов</h3>
+                        <p>Продвижение ботов, сервисов и Telegram-ресурсов</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="pricing" class="pricing">
+            <div class="container">
+                <h2 class="section-title">
+                    <span class="section-number">05</span>
+                    ПОЛУЧИТЬ ДОСТУП
+                </h2>
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>SCARRY SOFT</h3>
+                        <div class="price">
+                            <span class="currency">$</span>
+                            <span class="amount">50</span>
+                            <span class="period">вечная лицензия</span>
+                        </div>
+                    </div>
+                    <div class="pricing-features">
+                        <div class="feature">✓ До 10 аккаунтов одновременно</div>
+                        <div class="feature">✓ Неограниченное количество групп</div>
+                        <div class="feature">✓ Поддержка прокси SOCKS5/HTTP</div>
+                        <div class="feature">✓ Автоматическая обработка ошибок</div>
+                        <div class="feature">✓ Система самозащиты</div>
+                        <div class="feature">✓ Пожизненные обновления</div>
+                        <div class="feature">✓ Техническая поддержка</div>
+                    </div>
+                    <button class="btn btn-purchase">
+                        <span>КУПИТЬ СЕЙЧАС</span>
+                        <div class="btn-glow"></div>
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact" class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <div class="logo">
+                        <span class="logo-icon">⚡</span>
+                        <span class="logo-text">SCARRY SOFT</span>
+                    </div>
+                    <p>Автоматизированная рассылка по Telegram группам</p>
+                </div>
+                <div class="footer-right">
+                    <div class="contact-info">
+                        <h4>Контакты</h4>
+                        <p>Telegram: @MNGR813</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 SCARRY SOFT. Все права защищены.</p>
+                <p class="disclaimer">Используйте софт в соответствии с правилами Telegram</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
